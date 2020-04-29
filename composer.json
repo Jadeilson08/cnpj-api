@@ -1,0 +1,13 @@
+{
+    "name": "API-CNPJ",
+    "description": "API de para a busca de CNPJ",
+    "authors": [
+        {
+            "name": "Jadeilson Leonardo Trizotti Rodrigues",
+            "email": "jadeilson08@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.5"
+    }
+}
