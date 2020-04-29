@@ -1,9 +1,8 @@
 {
-    "name": "API-CNPJ",
-    "description": "API de para a busca de CNPJ",
+    "name": "jadei/api",
     "authors": [
         {
-            "name": "Jadeilson Leonardo Trizotti Rodrigues",
+            "name": "jadeilson",
             "email": "jadeilson08@gmail.com"
         }
     ],
