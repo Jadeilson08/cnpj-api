@@ -24,7 +24,6 @@
     #Acessar o site www.receitaws.com.br e cria o JSON
     function generateJSON($cnpj)
     {
-        # https://www.receitaws.com.br/v1/cnpj/04391715000173
         $url = "https://www.receitaws.com.br/v1/cnpj/".$cnpj;
         $ci = curl_init($url);
         curl_setopt($ci, CURLOPT_RETURNTRANSFER, true);
