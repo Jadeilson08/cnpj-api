@@ -48,7 +48,7 @@ class Xml{
         $descrição_cnae = '';
         foreach($cnpj->atividade_principal as $atividade_principal){
             $codigo_cnae = $xml->createElement("codigoCNAE", utf8_encode($atividade_principal->code));
-            $descrição_cnae = $xml->createElement("descriçãoCNAE", utf8_encode($atividade_principal->text));
+            $descricao_cnae = $xml->createElement("descricaoCNAE", utf8_encode($atividade_principal->text));
         }
         $municipio = $xml->createElement("municipio", utf8_encode($cnpj->municipio));
         $telefone = $xml->createElement("telefone", utf8_encode($cnpj->telefone));
@@ -64,7 +64,7 @@ class Xml{
         $empresa->appendChild($situacao);
         $empresa->appendChild($data_situacao);
         $empresa->appendChild($codigo_cnae);
-        $empresa->appendChild($descrição_cnae);
+        $empresa->appendChild($descricao_cnae);
         $empresa->appendChild($municipio);
         $empresa->appendChild($telefone);
         $empresa->appendChild($data_abertura);
