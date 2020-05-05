@@ -3,16 +3,11 @@ require_once 'Validate.php';
 
 class Json{
 
-    public function createJson($path)
+    public function createJson($cnpj)
     {
         $validate = new Validate();
-        $cnpj = $validate->validateCNPJ($path);
-        if($_SERVER['REQUEST_METHOD'] === 'GET'){            
-            $cnpj = $this->generateJSON($cnpj);
-            return $cnpj;
-        }else{
-            return "Requisição POST é inválida";    
-        }
+        $cnpj = $this->generateJSON($cnpj);
+        return $cnpj;
     }
 
     #Acessar o site www.receitaws.com.br e cria o JSON

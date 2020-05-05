@@ -5,7 +5,8 @@ class Validate{
     {
         $cnpj = preg_replace("/[^0-9]/", "", $cnpj);
         if(strlen($cnpj)!=14){
-            return "CNPJ Inválido";
+            # "CNPJ Inválido"
+            return false;
         }else{
             return (string) $cnpj;
         }
